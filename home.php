@@ -9,9 +9,12 @@
         <form action="home.php" method="POST">
                 <table><tr><td>Name:</td><td><input id="nm" type="text" name="name" placeholder="Enter Name" required/></td></tr>
                 <tr><td>Phone:</td><td><input type="phone" id="ph" name="phno" placeholder="phone number" /></td></tr>
-                <input type="submit" name="rbtn" value="Add" onclick="return validation()" />
+                <td><input type="submit" name="rbtn" value="Add" onclick="return validation()" /></td>
                 </table>
-    </form>
+        </form>
+        <form action="list.php">
+        <input type="submit" name="dbtn" value='List of Subscribers'>
+        </form>
 <?php
     if(isset($_POST['rbtn']))
 {
